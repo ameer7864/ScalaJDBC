@@ -1,0 +1,733 @@
+2025-11-18 16:52:19 [Test worker-ScalaTest-running-ArtistRepositoryForInsertH2Spec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-18 16:52:21 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] ERROR m.r.ArtistRepositoryForInsert - Failed to execute batch: Batch failed
+java.lang.RuntimeException: Batch failed
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2(ArtistRepositoryForInsert.scala:53)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2$adapted(ArtistRepositoryForInsert.scala:42)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1(ArtistRepositoryForInsert.scala:42)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1$adapted(ArtistRepositoryForInsert.scala:32)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.insertInBatches(ArtistRepositoryForInsert.scala:32)
+	at org.example.UnitTesting.ArtistInsertMethodSpec.$anonfun$new$2(ArtistInsertMethodSpec.scala:77)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1832)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1824)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1899)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1686)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1943)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1686)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1(ScalaTestEngine.scala:319)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1$adapted(ScalaTestEngine.scala:253)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at org.scalatestplus.junit5.ScalaTestEngine.execute(ScalaTestEngine.scala:253)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+2025-11-18 16:52:21 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-18 17:00:48 [Test worker-ScalaTest-running-ArtistRepositoryForInsertH2Spec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-18 17:00:49 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] ERROR m.r.ArtistRepositoryForInsert - Failed to execute batch: Batch failed
+java.lang.RuntimeException: Batch failed
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2(ArtistRepositoryForInsert.scala:53)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2$adapted(ArtistRepositoryForInsert.scala:42)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1(ArtistRepositoryForInsert.scala:42)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1$adapted(ArtistRepositoryForInsert.scala:32)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.insertInBatches(ArtistRepositoryForInsert.scala:32)
+	at org.example.UnitTesting.ArtistInsertMethodSpec.$anonfun$new$2(ArtistInsertMethodSpec.scala:77)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1832)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1824)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1899)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1686)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1943)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1686)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1(ScalaTestEngine.scala:319)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1$adapted(ScalaTestEngine.scala:253)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at org.scalatestplus.junit5.ScalaTestEngine.execute(ScalaTestEngine.scala:253)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+2025-11-18 17:00:49 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-18 17:11:04 [Test worker-ScalaTest-running-ArtistRepositoryForInsertH2Spec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-18 17:11:53 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] ERROR m.r.ArtistRepositoryForInsert - Failed to execute batch: Batch failed
+java.lang.RuntimeException: Batch failed
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2(ArtistRepositoryForInsert.scala:53)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2$adapted(ArtistRepositoryForInsert.scala:42)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1(ArtistRepositoryForInsert.scala:42)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1$adapted(ArtistRepositoryForInsert.scala:32)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.insertInBatches(ArtistRepositoryForInsert.scala:32)
+	at org.example.UnitTesting.ArtistInsertMethodSpec.$anonfun$new$2(ArtistInsertMethodSpec.scala:77)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1832)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1824)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1899)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1686)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1943)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1686)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1(ScalaTestEngine.scala:319)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1$adapted(ScalaTestEngine.scala:253)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at org.scalatestplus.junit5.ScalaTestEngine.execute(ScalaTestEngine.scala:253)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+2025-11-18 17:11:53 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 3 records
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 1 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 3 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 2 records
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 3 records so far
+2025-11-18 23:51:56 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processing CSV file: test.csv with batch size: 100
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 1 records so far
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 3 records so far
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 2 records
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 3 records so far
+2025-11-18 23:54:30 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processing CSV file: test.csv with batch size: 100
+2025-11-18 23:55:57 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:55:57 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-18 23:55:57 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:55:57 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:55:57 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 3 records so far
+2025-11-18 23:57:55 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-18 23:57:55 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-18 23:57:55 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:57:55 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-18 23:57:55 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 3 records so far
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\batch_test.csv with batch size: 2
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\missing_columns.csv with batch size: 10
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 2 records
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\malformed_rows.csv with batch size: 10
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 3 records
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\empty.csv with batch size: 10
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\special_chars.csv with batch size: 10
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 4 records
+2025-11-19 07:51:43 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\companion_test.csv with batch size: 10
+2025-11-19 07:51:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 07:51:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\large_batch.csv with batch size: 100
+2025-11-19 07:51:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 2 records
+2025-11-19 08:06:22 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 08:06:22 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:06:22 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 08:06:23 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 08:06:23 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:06:23 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 08:06:23 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 08:11:52 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 08:11:52 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:11:52 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 08:11:52 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 08:11:52 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:11:52 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 08:11:52 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 08:13:01 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 08:13:01 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:13:01 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 08:13:01 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 08:13:01 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:13:01 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 08:13:01 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 08:13:45 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 08:13:45 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:13:45 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 08:13:45 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 08:13:45 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:13:45 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 08:13:45 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 08:19:04 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 08:19:04 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:19:04 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 08:19:04 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 08:19:04 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:19:04 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 08:19:04 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 08:23:41 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 08:23:41 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:23:41 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 08:23:41 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\malformed_data.csv with batch size: 2
+2025-11-19 08:23:41 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\wrong_headers.csv with batch size: 2
+2025-11-19 08:23:41 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:23:41 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 08:24:21 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 08:24:21 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:24:21 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 08:24:21 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 08:24:21 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 08:24:21 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 08:24:21 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 10:26:12 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] ERROR m.r.ArtistRepositoryForInsert - Failed to execute batch: Batch failed
+java.lang.RuntimeException: Batch failed
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2(ArtistRepositoryForInsert.scala:53)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2$adapted(ArtistRepositoryForInsert.scala:42)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1(ArtistRepositoryForInsert.scala:42)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1$adapted(ArtistRepositoryForInsert.scala:32)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.insertInBatches(ArtistRepositoryForInsert.scala:32)
+	at org.example.UnitTesting.ArtistInsertMethodSpec.$anonfun$new$2(ArtistInsertMethodSpec.scala:73)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1832)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1824)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1899)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1686)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1943)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1686)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1(ScalaTestEngine.scala:319)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1$adapted(ScalaTestEngine.scala:253)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at org.scalatestplus.junit5.ScalaTestEngine.execute(ScalaTestEngine.scala:253)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+2025-11-19 10:26:12 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-19 10:29:44 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 10:29:44 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 10:29:44 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 10:29:44 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 10:37:59 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 10:37:59 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 10:37:59 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 10:37:59 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 10:37:59 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 10:37:59 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 10:37:59 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 10:44:25 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] ERROR m.r.ArtistRepositoryForInsert - Failed to execute batch: Batch failed
+java.lang.RuntimeException: Batch failed
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2(ArtistRepositoryForInsert.scala:53)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2$adapted(ArtistRepositoryForInsert.scala:42)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1(ArtistRepositoryForInsert.scala:42)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1$adapted(ArtistRepositoryForInsert.scala:32)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.insertInBatches(ArtistRepositoryForInsert.scala:32)
+	at org.example.UnitTesting.ArtistInsertMethodSpec.$anonfun$new$2(ArtistInsertMethodSpec.scala:74)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1832)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1824)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1899)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1686)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1943)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1686)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1(ScalaTestEngine.scala:319)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1$adapted(ScalaTestEngine.scala:253)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at org.scalatestplus.junit5.ScalaTestEngine.execute(ScalaTestEngine.scala:253)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+2025-11-19 10:44:25 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-19 10:46:22 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 10:46:22 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 10:46:22 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 10:46:22 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 10:56:45 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 10:56:45 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 10:56:45 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 10:56:45 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 12:00:15 [Test worker-ScalaTest-running-ArtistReadToCSVSpec] ERROR m.r.ArtistRepositoryForReadToCSV - Database has no columns
+2025-11-19 12:03:31 [Test worker-ScalaTest-running-ArtistReadToCSVSpec] ERROR m.r.ArtistRepositoryForReadToCSV - Database has no columns
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-ArtistRepositoryForInsertH2Spec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 13:24:35 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 13:24:37 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] ERROR m.r.ArtistRepositoryForInsert - Failed to execute batch: Batch failed
+java.lang.RuntimeException: Batch failed
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2(ArtistRepositoryForInsert.scala:34)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2$adapted(ArtistRepositoryForInsert.scala:23)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1(ArtistRepositoryForInsert.scala:23)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1$adapted(ArtistRepositoryForInsert.scala:13)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.insertInBatches(ArtistRepositoryForInsert.scala:13)
+	at org.example.UnitTesting.ArtistInsertMethodSpec.$anonfun$new$2(ArtistInsertMethodSpec.scala:55)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1832)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1824)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1899)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1686)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1943)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1686)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1(ScalaTestEngine.scala:319)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1$adapted(ScalaTestEngine.scala:253)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at org.scalatestplus.junit5.ScalaTestEngine.execute(ScalaTestEngine.scala:253)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+2025-11-19 13:24:37 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-19 13:24:37 [Test worker-ScalaTest-running-ArtistReadToCSVSpec] ERROR m.r.ArtistRepositoryForReadToCSV - Database has no columns
+2025-11-19 13:24:37 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 13:24:37 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 13:24:37 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 13:24:37 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-ArtistRepositoryForInsertH2Spec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\valid_data.csv with batch size: 2
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: C:\scala programs\jdbc\app\src\test\resources\csv-test-data\invalid_data.csv with batch size: 2
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 13:37:44 [Test worker-ScalaTest-running-CSVProcessorServiceH2Spec] INFO  mvc.services.CSVProcessorService - Processing CSV file: non_existent_file.csv with batch size: 2
+2025-11-19 13:37:46 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] ERROR m.r.ArtistRepositoryForInsert - Failed to execute batch: Batch failed
+java.lang.RuntimeException: Batch failed
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2(ArtistRepositoryForInsert.scala:34)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$2$adapted(ArtistRepositoryForInsert.scala:23)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1(ArtistRepositoryForInsert.scala:23)
+	at mvc.repositories.ArtistRepositoryForInsert.$anonfun$insertInBatches$1$adapted(ArtistRepositoryForInsert.scala:13)
+	at scala.util.Using$.resource(Using.scala:296)
+	at mvc.repositories.ArtistRepositoryForInsert.insertInBatches(ArtistRepositoryForInsert.scala:13)
+	at org.example.UnitTesting.ArtistInsertMethodSpec.$anonfun$new$2(ArtistInsertMethodSpec.scala:55)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)
+	at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:83)
+	at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)
+	at org.scalatest.Transformer.apply(Transformer.scala:22)
+	at org.scalatest.Transformer.apply(Transformer.scala:20)
+	at org.scalatest.flatspec.AnyFlatSpecLike$$anon$5.apply(AnyFlatSpecLike.scala:1832)
+	at org.scalatest.TestSuite.withFixture(TestSuite.scala:196)
+	at org.scalatest.TestSuite.withFixture$(TestSuite.scala:195)
+	at org.scalatest.flatspec.AnyFlatSpec.withFixture(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.invokeWithFixture$1(AnyFlatSpecLike.scala:1830)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTest$1(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.SuperEngine.runTestImpl(Engine.scala:306)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest(AnyFlatSpecLike.scala:1842)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTest$(AnyFlatSpecLike.scala:1824)
+	at org.scalatest.flatspec.AnyFlatSpec.runTest(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$runTests$1(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:413)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:390)
+	at org.scalatest.SuperEngine.$anonfun$runTestsInBranch$1(Engine.scala:427)
+	at scala.collection.immutable.List.foreach(List.scala:334)
+	at org.scalatest.SuperEngine.traverseSubNodes$1(Engine.scala:401)
+	at org.scalatest.SuperEngine.runTestsInBranch(Engine.scala:396)
+	at org.scalatest.SuperEngine.runTestsImpl(Engine.scala:475)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests(AnyFlatSpecLike.scala:1900)
+	at org.scalatest.flatspec.AnyFlatSpecLike.runTests$(AnyFlatSpecLike.scala:1899)
+	at org.scalatest.flatspec.AnyFlatSpec.runTests(AnyFlatSpec.scala:1686)
+	at org.scalatest.Suite.run(Suite.scala:1114)
+	at org.scalatest.Suite.run$(Suite.scala:1096)
+	at org.scalatest.flatspec.AnyFlatSpec.org$scalatest$flatspec$AnyFlatSpecLike$$super$run(AnyFlatSpec.scala:1686)
+	at org.scalatest.flatspec.AnyFlatSpecLike.$anonfun$run$1(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.SuperEngine.runImpl(Engine.scala:535)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run(AnyFlatSpecLike.scala:1945)
+	at org.scalatest.flatspec.AnyFlatSpecLike.run$(AnyFlatSpecLike.scala:1943)
+	at org.scalatest.flatspec.AnyFlatSpec.run(AnyFlatSpec.scala:1686)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1(ScalaTestEngine.scala:319)
+	at org.scalatestplus.junit5.ScalaTestEngine.$anonfun$execute$1$adapted(ScalaTestEngine.scala:253)
+	at scala.collection.IterableOnceOps.foreach(IterableOnce.scala:619)
+	at scala.collection.IterableOnceOps.foreach$(IterableOnce.scala:617)
+	at scala.collection.AbstractIterable.foreach(Iterable.scala:935)
+	at org.scalatestplus.junit5.ScalaTestEngine.execute(ScalaTestEngine.scala:253)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:135)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:104)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:64)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:194)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:126)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:122)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:72)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+2025-11-19 13:37:46 [Test worker-ScalaTest-running-ArtistInsertMethodSpec] WARN  m.r.ArtistRepositoryForInsert - List is empty to insert
+2025-11-19 13:37:46 [Test worker-ScalaTest-running-ArtistReadToCSVSpec] ERROR m.r.ArtistRepositoryForReadToCSV - Database has no columns
+2025-11-19 13:37:47 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 2 records so far
+2025-11-19 13:37:47 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed 4 records so far
+2025-11-19 13:37:47 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
+2025-11-19 13:37:47 [Test worker-ScalaTest-running-CSVProcessorServiceSpec] INFO  mvc.services.CSVProcessorService - Processed final 1 records
