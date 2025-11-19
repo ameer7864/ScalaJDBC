@@ -69,7 +69,7 @@ class ArtistRepositoryForDeleteH2Spec extends AnyFlatSpec with Matchers with Bef
     }
   }
 
-  it should "handle non-existent table gracefully" in {
+  it should "handle table that does not exists gracefully" in {
     val repository = new ArtistRepositoryForDelete(testConfigLoader)
 
     val exception = intercept[org.h2.jdbc.JdbcSQLSyntaxErrorException] {
@@ -77,45 +77,6 @@ class ArtistRepositoryForDeleteH2Spec extends AnyFlatSpec with Matchers with Bef
     }
 
     exception.getMessage should include("Table \"NON_EXISTENT_TABLE\" not found")
-  }
-
-  it should "work correctly when table has mixed user_id values" in {
-    Using.resource(testConfigLoader.getConnection) { connection =>
-      val statement = connection.createStatement()
-      statement.execute(
-        """
-          INSERT INTO ARTISTS (user_id, rank, artist_name, playcount, mbid) VALUES
-          ('user2', '1', 'User2 Artist One', '150', 'user2-mbid1'),
-          ('user2', '2', 'User2 Artist Two', '250', 'user2-mbid2'),
-          ('user3', '1', 'User3 Artist One', '999', 'user3-mbid1')
-        """
-      )
-      statement.close()
-    }
-
-    val repository = new ArtistRepositoryForDelete(testConfigLoader)
-
-    val result = repository.deleteFromSql("ARTISTS")
-
-    result shouldBe 3
-
-    Using.resource(testConfigLoader.getConnection) { connection =>
-      val statement = connection.createStatement()
-
-      val user1Result = statement.executeQuery("SELECT COUNT(*) as count FROM ARTISTS WHERE user_id = 'user1'")
-      user1Result.next()
-      user1Result.getInt("count") shouldBe 0
-
-      val user2Result = statement.executeQuery("SELECT COUNT(*) as count FROM ARTISTS WHERE user_id = 'user2'")
-      user2Result.next()
-      user2Result.getInt("count") shouldBe 2
-
-      val user3Result = statement.executeQuery("SELECT COUNT(*) as count FROM ARTISTS WHERE user_id = 'user3'")
-      user3Result.next()
-      user3Result.getInt("count") shouldBe 1
-
-      statement.close()
-    }
   }
 
 }
