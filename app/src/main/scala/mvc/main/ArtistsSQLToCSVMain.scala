@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory
 object ArtistsSQLToCSVMain extends App {
   val logger = LoggerFactory.getLogger(getClass)
   val outputFilePath = "C:\\Users\\Ameeruddin\\Downloads\\artists_exp1.csv"
-  println("Starting exporting from DB to CSV")
+  logger.info("Starting exporting from DB to CSV")
 
   private val isExportComplete = new ArtistRepositoryForReadToCSV().exportCSV("artists", outputFilePath)
 
